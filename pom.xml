@@ -82,11 +82,6 @@
             <version>4.12</version>
         </dependency>
         <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>cineData</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-api</artifactId>
             <version>${jakartaee}</version>
