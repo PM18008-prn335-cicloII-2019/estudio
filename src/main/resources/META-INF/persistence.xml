@@ -3,7 +3,6 @@
   <!-- Define Persistence Unit -->
   <persistence-unit name="cinePU" transaction-type="JTA">
     <jta-data-source>jdbc/cine</jta-data-source>
-    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>ues.occ.edu.sv.ingenieria.prn335.cineData.entity.AtributoFuncion</class>
     <class>ues.occ.edu.sv.ingenieria.prn335.cineData.entity.Boleto</class>
     <class>ues.occ.edu.sv.ingenieria.prn335.cineData.entity.AtributoSala</class>

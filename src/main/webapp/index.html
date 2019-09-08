@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Start Page</title>
+        <title>Formulario</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Menu</h1>
+        
+        <h2>Buscar sala por asiento</h2>
+        <form action="frmServlet" method="POST">
+            <table>
+                <tr>
+                    <td>Tipo de asiento</td>
+                    <td><input type="text" id="asiento" name="TipoAsiento"></td>
+                    
+                </tr>
+            </table>
+        </form>
+        <input type="submit" name="btnBuscar" value="SalaPorAsiento">
     </body>
 </html>

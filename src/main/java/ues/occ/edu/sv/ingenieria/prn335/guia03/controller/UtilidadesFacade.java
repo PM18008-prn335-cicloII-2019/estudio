@@ -31,7 +31,6 @@ public class UtilidadesFacade implements Serializable {
     }
     
     
-    
     /**
      * Listar las salas que posean asientos Reclinables
      * @return
@@ -40,7 +39,7 @@ public class UtilidadesFacade implements Serializable {
     public List<Sala> tipoAsiento() throws Exception {
         if (em != null) {
            try {
-                Query query = em.createQuery("SELECT s FROM Sala s INNER JOIN s.asientoSalaList al on al.asiento.atributoAsientoList.caracteristicaAsiento.caracteristica=Reclinable");
+                Query query = em.createQuery("SELECT s FROM Sala s INNER JOIN s.asientoSalaList al ON al.asiento.atributoAsientoList.caracteristicaAsiento.caracteristica=Reclinable");
                 List tipoAsiento = query.getResultList();
                 return tipoAsiento;
             } catch (Exception e) {
